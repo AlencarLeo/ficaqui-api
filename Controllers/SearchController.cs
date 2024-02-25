@@ -9,7 +9,7 @@ namespace ficaqui_api.Controllers
     public class SearchController : ControllerBase
     {
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<ActionResult<List<Search>>> GetAll()
         {
             var search = new List<Search> 
             {
